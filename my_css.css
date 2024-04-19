@@ -1,0 +1,239 @@
+body{
+    max-width: 1200px;
+    margin: 0 auto; /* Để căn giữa theo chiều ngang */
+}
+/* CSS cho header */
+/* CSS cho header */
+#header {
+    background-color: #f0f0f0; /* Màu nền header */
+    padding: 5px; /* Khoảng cách lề bên trong */
+}
+
+.tren-header {
+    display: flex; /* Hiển thị các phần tử theo chiều ngang */
+    justify-content: space-between; /* Canh chỉnh các phần tử ở hai đầu */
+    align-items: center; /* Canh chỉnh các phần tử theo chiều dọc */
+}
+
+.lienhe {
+    width: 70%; /* Độ rộng */
+    height: 30px; /* Độ cao */
+}
+
+.login {
+    position: relative; 
+    width: 40%; /* Độ rộng */
+    height: 30px; /* Độ cao */
+}
+
+.lienhe p,
+.login p {
+    display: inline; /* Hiển thị các phần tử p trên cùng một dòng */
+    margin: 0px; /* Loại bỏ margin mặc định của các phần tử p */
+}
+
+.login input {
+    display: inline-block; /* Hiển thị input trên cùng một dòng */
+    margin: 0; /* Loại bỏ margin mặc định của input */
+    vertical-align: middle; /* Canh chỉnh theo chiều dọc */
+    width: 50%;
+    margin-left: 5px;
+    height: 20px;
+    padding-left: 30px; /* Để tạo khoảng trống cho hình ảnh */
+}
+.lienhe button,
+.login button {
+    height: 29px;
+    display: inline-block; /* Hiển thị các hình ảnh trên cùng một dòng */
+    vertical-align: middle; /* Canh chỉnh theo chiều dọc */
+}
+.login img {
+    position: absolute; /* Đặt hình ảnh là absolute để nó tự do di chuyển */
+    right: 7%; /* Đặt khoảng cách từ bên trái */
+    top: 50%; /* Đặt vị trí theo chiều dọc */
+    transform: translateY(-50%); /* Canh chỉnh theo chiều dọc */
+    height: 20px; /* Độ cao của hình ảnh */
+}
+.lienhe img {
+    display: inline-block; /* Hiển thị các hình ảnh trên cùng một dòng */
+    vertical-align: middle; /* Canh chỉnh theo chiều dọc */
+    margin-left: 5px; /* Khoảng cách giữa các hình ảnh */
+    height: 25px;
+}
+
+
+.giua-header {
+    display: flex; /* Hiển thị các phần tử theo chiều ngang */
+    justify-content: space-between; /* Canh chỉnh các phần tử ở hai đầu */
+    margin-top: 5px; /* Khoảng cách từ phần trên */
+}
+
+.phai {
+    position: relative;
+  
+    width: 30%; /* Độ rộng */
+    height: 130px; /* Độ cao */
+}
+.giua {
+    position: relative;
+
+    width: 39%; /* Độ rộng */
+    height: 130px; /* Độ cao */
+}
+.trai {
+    position: relative;
+
+    width: 30%; /* Độ rộng */
+    height: 130px; /* Độ cao */
+}
+.logo {
+    width: 100%; /* Chiều rộng là 100% của phần tử cha (.trai) */
+    height: 100%; /* Chiều cao là 100% của phần tử cha (.trai) */
+    overflow: hidden; /* Ẩn nội dung bị tràn ra ngoài khung */
+}
+
+.logo img {
+    width: 100%; /* Chiều rộng là 100% của phần tử cha (.logo) */
+    height: 100%; /* Chiều cao là 100% của phần tử cha (.logo) */
+}
+
+.banner {
+    width: 100%; /* Chiều rộng là 100% của phần tử cha (.trai) */
+    height: 100%; /* Chiều cao là 100% của phần tử cha (.trai) */
+    overflow: hidden; /* Ẩn nội dung bị tràn ra ngoài khung */
+}
+
+.banner img {
+    width: 100%; /* Chiều rộng là 100% của phần tử cha (.logo) */
+    height: 100%; /* Chiều cao là 100% của phần tử cha (.logo) */
+}
+
+/* CSS cho nav */
+.duoi-header {
+    padding: 2px; /* Khoảng cách lề bên trong */
+}
+
+.menu {
+    border: 1px solid #ccc; /* Tạo đường kẻ phía bên phải của mỗi mục menu */
+    height: 35px; /* Độ cao */
+}
+
+.menu ul {
+    list-style-type: none; /* Loại bỏ dấu đầu dòng của danh sách */
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 0; /* Loại bỏ padding mặc định */
+}
+
+.menu ul li {
+    display: inline-block; /* Hiển thị các mục menu trên cùng một dòng */
+    margin-top: 6px;
+    margin-right: 5px; /* Khoảng cách giữa các mục menu */
+    border-right: 1px solid #ccc; /* Tạo đường kẻ phía bên phải của mỗi mục menu */
+    padding-right: 10px; /* Khoảng cách giữa đường kẻ và nội dung mục menu */
+    font-weight: bold; /* Đặt chữ in đậm */
+    font-size: 13px; /* Đặt kích thước font */
+}
+
+.menu ul li img {
+    display: inline-block; /* Hiển thị hình ảnh trên cùng một dòng */
+    vertical-align: middle; /* Canh chỉnh theo chiều dọc */
+    margin-right: 5px; /* Khoảng cách giữa hình ảnh và nội dung văn bản */
+    height: 20px; /* Độ cao của hình ảnh */
+    margin-left: 30%;
+}
+
+.menu ul li:last-child {
+    margin-right: 0; /* Loại bỏ khoảng cách của mục menu cuối cùng */
+}
+
+.menu ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân từ liên kết */
+    color: #000; /* Màu chữ cho liên kết */
+}
+
+
+/* CSS cho main */
+.main-container {
+    display: flex; /* Hiển thị các phần tử theo chiều ngang */
+    justify-content: space-between; /* Canh chỉnh các phần tử ở hai đầu */
+    margin-top: 2px; /* Khoảng cách từ phần trên */
+}
+.main_trai {
+    width: 60%; /* Độ rộng */
+    margin-right: 5px;
+}
+
+.trangnhat {
+    color: rgb(249, 0, 0); /* Màu chữ */
+    padding: 6px 10px;
+    text-align: center; /* Căn giữa nội dung */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    display: inline-block; /* Hiển thị nút trên cùng một dòng */
+    font-size: 16px; /* Cỡ chữ */
+
+    border-radius: 0px 50px 50px 0px ; /* Bo tròn góc */
+}
+.noidung h1{
+    color: rgb(177, 13, 13); /* Màu chữ */
+    text-decoration: none; /* Loại b�� gạch chân */
+    display: inline-block; /* Hiển thị nút trên cùng một dòng */
+    font-size: 40px; /* C�� chữ */
+    margin-bottom: 5px; /* Khoảng cách với phần nội dung */
+    border-radius: 0px 50px 50px 0px ; /* Bo tròn góc */
+}
+.noidung h2{
+    text-decoration: none; /* Loại b�� gạch chân */
+    display: inline-block; /* Hiển thị nút trên cùng một dòng */
+    font-size: 20px; /* C�� chữ */
+    margin-top: 1px; /* Khoảng cách với phần nội dung */
+    border-radius: 0px 50px 50px 0px ; /* Bo tròn góc */
+}
+
+.main-giua {
+    background-color: #dc7a18; /* Màu nền cho phần trái */
+    width: 20%; /* Độ rộng */
+    height: 640px; /* Độ cao */
+}
+
+.main-giua-1 {
+    background-color: #b41e26; /* Màu nền cho các phần giữa */
+    width: 100%; /* Độ rộng */
+    height: 400px; /* Độ cao */
+    margin-bottom: 10px; /* Khoảng cách từ phần dưới */
+    word-wrap: break-word; /* Chia từ khi nội dung vượt quá kích thước */
+}
+.main-giua-2 {
+    background-color: #b41e26; /* Màu nền cho các phần giữa */
+    width: 100%; /* Độ rộng */
+    height: 200px; /* Độ cao */
+    margin-bottom: 10px; /* Khoảng cách từ phần dưới */
+}
+
+.main-phai {
+    background-color: #ac99ff; /* Màu nền cho phần trái */
+    width: 30%; /* Độ rộng */
+    height: 640px; /* Độ cao */
+    .main_phai_2 img,
+    .main_phai_3 img,
+    .main_phai_4 img {
+    width: 100%; /* Chiều rộng là 100% */
+    height: auto; /* Chiều cao tự điều chỉnh theo tỷ lệ */
+    display: block; /* Đảm bảo hình ảnh không bị tràn ra ngoài khung */
+    margin-bottom: 5px; /* Khoảng cách giữa các hình ảnh */
+}
+}
+
+.main_phai_1, .main_phai_2, .main_phai_3, .main_phai_4 {
+    background-color: #99ffff; /* Màu nền cho các phần của phần phải */
+    width: 100%; /* Độ rộng */
+    height: 160px; /* Độ cao */
+    
+}
+
+/* CSS cho footer */
+#footer {
+    background-color: #333; /* Màu nền footer */
+    color: #fff; /* Màu chữ */
+    padding: 20px; /* Khoảng cách lề bên trong */
+    text-align: center; /* Căn giữa nội dung */
+}
